@@ -75,6 +75,9 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   void newQuestion() {
+    debugPrint(currentQuestion.correctAnswer);
+    currentQuestion.correctAnswer = "hop";
+    debugPrint(currentQuestion.correctAnswer);
     void update(value) {
       setState(() {
         value == "R" ? _riteCount++ : _wrongCount++;
